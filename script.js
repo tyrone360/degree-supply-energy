@@ -632,3 +632,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// ==========================================
+// PROGRESSIVE WEB APP (PWA)
+// ==========================================
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("./service-worker.js")
+      .then(() => {
+        console.log("Degree Supply Energy app is ready.");
+      })
+      .catch((error) => {
+        console.error("Service worker registration failed:", error);
+      });
+  });
+}

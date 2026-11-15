@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#16130F">
+  <title>You're Offline | Degree Supply Energy</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: #16130F;
+      color: #F5F0E6;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .offline-card {
+      width: 100%;
+      max-width: 460px;
+      padding: 40px 25px;
+      border: 1px solid rgba(199, 158, 72, 0.4);
+      border-radius: 18px;
+      background: #211D17;
+      box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      width: 125px;
+      max-width: 70%;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid rgba(199,158,72,.65);
+      overflow: hidden;
+      filter: drop-shadow(0 10px 30px rgba(199,158,72,.16));
+      height: auto;
+      margin-bottom: 25px;
+      border-radius: 10px;
+    }
+
+    .offline-icon {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #C79E48;
+      border-radius: 50%;
+      color: #C79E48;
+      font-size: 36px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      color: #C79E48;
+      font-size: 27px;
+    }
+
+    p {
+      color: #C9C1B3;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    button {
+      margin-top: 22px;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 8px;
+      background: #C79E48;
+      color: #16130F;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #E0B95F;
+    }
+
+    .status {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #A99E8B;
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: #8E8577;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <main class="offline-card">
+    <img class="logo" src="./Assets/branding/logo.png" alt="Degree Supply Energy">
+
+    <div class="offline-icon" aria-hidden="true">⌁</div>
+
+    <h1>You're Currently Offline</h1>
+
+    <p>
+      It looks like your internet connection is unavailable.
+      Please reconnect to mobile data or Wi-Fi to access
+      Degree Supply Energy.
+    </p>
+
+    <button onclick="retryConnection()">Try Again</button>
+
+    <div class="status" id="status">
+      Waiting for an internet connection...
+    </div>
+
+    <div class="footer">DEGREE SUPPLY ENERGY</div>
+  </main>
+
+  <script>
+    const statusText = document.getElementById("status");
+
+    function retryConnection() {
+      if (navigator.onLine) {
+        statusText.textContent = "Connection detected. Reloading...";
+        window.location.reload();
+      } else {
+        statusText.textContent = "Still offline. Please check your connection.";
+      }
+    }
+
+    window.addEventListener("online", () => {
+      statusText.textContent = "Connection restored. Reloading...";
+      window.location.reload();
+    });
+  </script>
+</body>
+</html>
+
