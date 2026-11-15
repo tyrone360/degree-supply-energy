@@ -1,0 +1,494 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#16130F">
+  <meta name="description" content="Degree Supply Energy â€” bulk fuel, LPG, coal, chrome ore and industrial resource supply enquiries.">
+  <title>Degree Supply Energy | Powering Possibilities</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- WELCOME SCREEN -->
+  <div class="welcome-screen" id="welcomeScreen">
+    <div class="welcome-content">
+      <img src="Assets/Branding/logo.png" alt="Degree Supply Energy logo" class="welcome-logo">
+      <p class="eyebrow">ENERGY SUPPLY  SOLUTIONS</p>
+      <h1>Powering<br><span>Possibilities.</span></h1>
+      <p class="welcome-description">
+        Your energy supply partner for fuel, gas and industrial resources.
+      </p>
+      <button class="enter-button" id="enterButton">
+        ENTER WEBSITE <span aria-hidden="true">→</span>
+      </button>
+      <p class="welcome-footer">DEGREE SUPPLY ENERGY</p>
+    </div>
+  </div>
+
+  <!-- MAIN WEBSITE -->
+  <div class="site-wrapper" id="siteWrapper">
+
+    <!-- FLOATING TOP NAVIGATION -->
+    <header class="site-header">
+      <a href="#home" class="brand">
+        <img src="Assets/Branding/logo.png" alt="Degree Supply Energy">
+        <span>DEGREE SUPPLY <strong>ENERGY</strong></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#pricing">Price guide</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-contact">Enquire ↗</a>
+      </nav>
+
+      <button class="settings-trigger" id="settingsButton" aria-label="Open settings">
+        <span aria-hidden="true">⚙</span>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="gold-line"></span> YOUR ENERGY. OUR PRIORITY.</p>
+          <h1>Powering business.<br><span>Moving industry.</span></h1>
+          <p>
+            Explore energy and industrial supply solutions, from bulk fuels
+            to LPG and mining resources.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#products" class="button-primary">Explore our products ↗</a>
+            <a href="#contact" class="button-secondary">Request a quotation</a>
+          </div>
+
+
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image"></div>
+          <div class="hero-image-label">
+            <span>01 / ENERGY SUPPLY</span>
+            <strong>Built around your needs.</strong>
+          </div>
+          <div class="hero-number">360°</div>
+        </div>
+      </section>
+
+      <!-- INTRO STRIP -->
+      <section class="intro-strip">
+        <p>ENERGY THAT KEEPS BUSINESS MOVING</p>
+        <span>FUEL</span>
+        <span>LPG</span>
+        <span>COAL</span>
+        <span>CHROME</span>
+        <span>INDUSTRIAL RESOURCES</span>
+      </section>
+
+      <!-- PRODUCT SHOWCASE -->
+      <section class="section products-section" id="products">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">WHAT WE SUPPLY</p>
+            <h2>Energy and resources<br><span>for every demand.</span></h2>
+          </div>
+
+          <p class="section-description">
+            Explore our supply categories. Open a product to discover
+            more information before submitting an enquiry.
+          </p>
+        </div>
+
+        <div class="product-showcase">
+
+          <div class="product-carousel" id="productCarousel">
+
+            <!-- DIESEL -->
+            <article class="product-card" data-product-card="Diesel">
+              <button class="product-open" type="button" data-open-product="Diesel" aria-label="View diesel details">
+                <div class="product-image diesel-image">
+                  <span class="product-index">01 / 06</span>
+                  <span class="product-tag">LIQUID FUELS</span>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">BULK FUEL</p>
+                  <h3>Diesel</h3>
+                  <p>Bulk diesel supply enquiries for 50ppm and 500ppm grades.</p>
+                  <div class="product-bottom">
+                    <span>Explore product</span>
+                    <span class="product-arrow">↗</span>
+                  </div>
+                </div>
+              </button>
+              <button class="flip-trigger" type="button" data-flip-product="Diesel">Flip card </button>
+            </article>
+
+            <!-- PETROL -->
+            <article class="product-card" data-product-card="Petrol">
+              <button class="product-open" type="button" data-open-product="Petrol" aria-label="View petrol details">
+                <div class="product-image petrol-image">
+                  <span class="product-index">02 / 06</span>
+                  <span class="product-tag">LIQUID FUELS</span>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">PETROL</p>
+                  <h3>Petrol</h3>
+                  <p>ULP93 and ULP95 petrol supply enquiries.</p>
+                  <div class="product-bottom">
+                    <span>Explore product</span>
+                    <span class="product-arrow">↗</span>
+                  </div>
+                </div>
+              </button>
+              <button class="flip-trigger" type="button" data-flip-product="Petrol">Flip card </button>
+            </article>
+
+            <!-- LPG -->
+            <article class="product-card" data-product-card="LPG Gas">
+              <button class="product-open" type="button" data-open-product="LPG Gas" aria-label="View LPG details">
+                <div class="product-image gas-image">
+                  <span class="product-index">03 / 06</span>
+                  <span class="product-tag">GAS SUPPLY</span>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">LIQUEFIED PETROLEUM GAS</p>
+                  <h3>LPG Gas</h3>
+                  <p>Gas bottle enquiries for 9kg, 14kg, 19kg and 48kg sizes.</p>
+                  <div class="product-bottom">
+                    <span>Explore product</span>
+                    <span class="product-arrow">↗</span>
+                  </div>
+                </div>
+              </button>
+              <button class="flip-trigger" type="button" data-flip-product="LPG Gas">Flip card </button>
+            </article>
+
+            <!-- COAL -->
+            <article class="product-card" data-product-card="Coal">
+              <button class="product-open" type="button" data-open-product="Coal" aria-label="View coal details">
+                <div class="product-image coal-image">
+                  <span class="product-index">04 / 06</span>
+                  <span class="product-tag">MINERAL RESOURCES</span>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">COAL SUPPLY</p>
+                  <h3>Coal</h3>
+                  <p>Bulk coal enquiries for RB1, RB2 and RB3 grades.</p>
+                  <div class="product-bottom">
+                    <span>Explore product</span>
+                    <span class="product-arrow">↗</span>
+                  </div>
+                </div>
+              </button>
+              <button class="flip-trigger" type="button" data-flip-product="Coal">Flip card </button>
+            </article>
+
+            <!-- ROM -->
+            <article class="product-card" data-product-card="ROM materials">
+              <button class="product-open" type="button" data-open-product="ROM materials" aria-label="View ROM details">
+                <div class="product-image rom-image">
+                  <span class="product-index">05 / 06</span>
+                  <span class="product-tag">INDUSTRIAL MATERIALS</span>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">MINING & INDUSTRIAL</p>
+                  <h3>Run-of-Mine</h3>
+                  <p>Enquire about ROM material requirements, specifications and quantities.</p>
+                  <div class="product-bottom">
+                    <span>Explore product</span>
+                    <span class="product-arrow">↗</span>
+                  </div>
+                </div>
+              </button>
+              <button class="flip-trigger" type="button" data-flip-product="ROM materials">Flip card â†»</button>
+            </article>
+
+            <!-- CHROME ORE -->
+            <article class="product-card" data-product-card="Chrome Ore">
+              <button class="product-open" type="button" data-open-product="Chrome Ore" aria-label="View chrome ore details">
+                <div class="product-image chrome-image">
+                  <span class="product-index">06 / 06</span>
+                  <span class="product-tag">MINERAL RESOURCES</span>
+                </div>
+                <div class="product-info">
+                  <p class="product-category">CHROME ORE</p>
+                  <h3>Chrome Ore</h3>
+                  <p>Enquiries for chrome-bearing rock material, quantities and specifications.</p>
+                  <div class="product-bottom">
+                    <span>Explore product</span>
+                    <span class="product-arrow">↗</span>
+                  </div>
+                </div>
+              </button>
+              <button class="flip-trigger" type="button" data-flip-product="Chrome Ore">Flip card </button>
+            </article>
+
+          </div>
+
+          <div class="carousel-controls">
+            <button type="button" id="previousProduct" aria-label="Previous products">←</button>
+            <span id="carouselPosition">01 / 06</span>
+            <button type="button" id="nextProduct" aria-label="Next products">→</button>
+          </div>
+
+          <p class="carousel-hint">SWIPE OR USE THE ARROWS TO EXPLORE</p>
+        </div>
+      </section>
+
+      <!-- PRODUCT DETAILS OVERLAY -->
+      <div class="product-modal" id="productModal" aria-hidden="true">
+        <div class="product-modal-backdrop" data-close-product></div>
+
+        <section class="product-detail-panel" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+          <button class="modal-close" type="button" data-close-product aria-label="Close product details">Ã—</button>
+
+          <p class="eyebrow" id="detailCategory">PRODUCT INFORMATION</p>
+          <div class="detail-image" id="detailImage"></div>
+
+          <div class="detail-content">
+            <span class="detail-index" id="detailIndex">01 / 06</span>
+            <h2 id="detailTitle">Product name</h2>
+            <p id="detailDescription">Product information will appear here.</p>
+
+            <div class="detail-specifications">
+              <h3>Product information</h3>
+              <ul id="detailSpecifications"></ul>
+            </div>
+
+            <p class="detail-disclaimer">
+              Product specifications, grades, quantities and availability
+              must be confirmed with the supplier before an order is placed.
+            </p>
+
+            <button class="button-primary detail-enquire" id="detailEnquire" type="button">
+              Enquire about this product ↗
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!-- PRICE GUIDE -->
+      <section class="price-section" id="pricing">
+        <div class="price-heading">
+          <div>
+            <p class="eyebrow">PRICE INFORMATION</p>
+            <h2>Know the market.<br><span>Plan your supply.</span></h2>
+          </div>
+          <p>
+            Fuel reference prices are reviewed monthly. Bulk selling prices
+            depend on the product, quantity, location and supplier quotation.
+          </p>
+        </div>
+
+        <div class="price-notice">
+          <div class="price-notice-icon">↗</div>
+          <div>
+            <strong>October 2026 Historical Fuel Reference</strong>
+            <p id="priceUpdated">Effective 7 October 2026 &mdash; Inland (Gauteng, Zone 9C).</p>
+          </div>
+          <a href="https://www.dmpr.gov.za/Branches/Petroleum-Resources/Fuel-Prices"
+             target="_blank" rel="noopener noreferrer">Official price updates ↗</a>
+        </div>
+
+        <div class="price-grid">
+          <div class="price-item">
+            <span>Petrol ULP93</span>
+            <strong>R29.88/L</strong>
+            <small>October 2026 inland pump-price reference</small>
+          </div>
+          <div class="price-item">
+            <span>Petrol ULP95</span>
+            <strong>R30.25/L</strong>
+            <small>October 2026 inland pump-price reference</small>
+          </div>
+          <div class="price-item">
+            <span>Diesel 50ppm</span>
+            <strong>R32.7989/L</strong>
+            <small>October 2026 inland wholesale list reference</small>
+          </div>
+          <div class="price-item">
+            <span>Diesel 500ppm</span>
+            <strong>R31.9549/L</strong>
+            <small>October 2026 inland wholesale list reference</small>
+          </div>
+        </div>
+
+        <p class="price-disclaimer">These are historical October 2026 inland reference prices, not current November prices or confirmed Degree Supply Energy selling prices. All bulk orders remain subject to quotation and confirmation.</p>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about-section" id="about">
+        <div class="about-mark">360°</div>
+        <div class="about-copy">
+          <p class="eyebrow">ABOUT DEGREE SUPPLY ENERGY</p>
+          <h2>A supply partner<br><span>for the bigger picture.</span></h2>
+          <p>
+            Degree Supply Energy presents a range of fuel, gas and
+            industrial resource supply options. Our enquiry process
+            helps customers communicate their product requirements,
+            quantities and delivery destinations.
+          </p>
+          <a href="#contact" class="text-link">Discuss your requirements ↗</a>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">LET'S TALK SUPPLY</p>
+          <h2>Tell us what<br><span>you need.</span></h2>
+          <p>
+            Share your product, quantity and delivery destination.
+            Our team can follow up on your enquiry.
+          </p>
+        </div>
+
+        <form class="enquiry-form" id="enquiryForm">
+          <label for="product">Product</label>
+          <select id="product" name="product" required>
+            <option value="">Select a product</option>
+            <option>Diesel</option>
+            <option>Petrol</option>
+            <option>LPG Gas</option>
+            <option>Coal</option>
+            <option>ROM materials</option>
+            <option>Chrome Ore</option>
+          </select>
+
+          <label for="variant">Grade / size</label>
+          <input id="variant" name="variant" type="text"
+                 placeholder="e.g. 50ppm, ULP95, 48kg, RB1">
+
+          <label for="quantity">Quantity required</label>
+          <input id="quantity" name="quantity" type="text"
+                 placeholder="e.g. 10 000 litres or 20 tons" required>
+
+          <label for="destination">Delivery destination</label>
+          <input id="destination" name="destination" type="text"
+                 placeholder="Town / city / province" required>
+
+          <label for="customerName">Your name / business</label>
+          <input id="customerName" name="customerName" type="text"
+                 placeholder="Your name or company">
+
+          <button type="submit" class="button-primary form-submit">
+            Send enquiry on WhatsApp ↗
+          </button>
+          <p class="form-note">
+            Your enquiry will open in WhatsApp for you to review and send.
+          </p>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+     <a href="#home" class="footer-brand">DEGREE SUPPLY ENERGY</a>
+
+<p>Powering possibilities.</p>
+
+<div class="footer-socials">
+  <a
+    href="https://www.facebook.com/360degreesupply/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+    title="Facebook"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.3H7.7V13h2.7v8z"/>
+    </svg>
+  </a>
+
+  <a
+    href="https://www.instagram.com/360degreesupply/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+    title="Instagram"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r=".8" class="social-dot"/>
+    </svg>
+  </a>
+</div>
+
+<p>2026 Degree Supply Energy. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <!-- BOTTOM APP NAVIGATION -->
+  <nav class="bottom-nav" id="bottomNav" aria-label="Quick navigation">
+    <a href="#home" class="bottom-nav-item active" data-nav="home">
+      <span aria-hidden="true">⌂</span>
+      <small>Home</small>
+    </a>
+    <a href="#products" class="bottom-nav-item" data-nav="products">
+      <span aria-hidden="true">◆</span>
+      <small>Products</small>
+    </a>
+    <a href="#contact" class="bottom-nav-item" data-nav="contact">
+      <span aria-hidden="true">✉</span>
+      <small>Inquire</small>
+    </a>
+    <button type="button" class="bottom-nav-item" id="bottomSettingsButton">
+      <span aria-hidden="true">⚙</span>
+      <small>Settings</small>
+    </button>
+  </nav>
+
+  <!-- SETTINGS PANEL -->
+  <div class="settings-modal" id="settingsModal" aria-hidden="true">
+    <div class="settings-backdrop" data-close-settings></div>
+
+    <section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+      <button class="modal-close" type="button" data-close-settings aria-label="Close settings">×</button>
+
+      <p class="eyebrow">PERSONALISE YOUR EXPERIENCE</p>
+      <h2 id="settingsTitle">Settings</h2>
+      <p>Choose the appearance that feels right for you.</p>
+
+      <div class="theme-options">
+        <button type="button" class="theme-option" data-theme-choice="dark">
+          <span class="theme-preview dark-preview"></span>
+          <strong>Dark mode</strong>
+          <small>Deep black and gold</small>
+        </button>
+
+        <button type="button" class="theme-option" data-theme-choice="light">
+          <span class="theme-preview light-preview"></span>
+          <strong>Light mode</strong>
+          <small>Warm cream and gold</small>
+        </button>
+      </div>
+
+      <p class="settings-note">Your appearance preference will be saved on this device.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
